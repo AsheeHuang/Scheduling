@@ -8,8 +8,8 @@ if __name__ == "__main__" :
         file.write(str(n) + "\n")
         end = 0
         for i in range(n) :
-            desk = random.poisson(2)+1
-            start = randint(1,n)
+            desk = random.poisson(1)+1
+            start = randint(1,n/2)
             end = start + random.poisson(2)
             file.write(str(desk) + " " + str(start) + " "  + str(end) + "\n")
         file.close()
